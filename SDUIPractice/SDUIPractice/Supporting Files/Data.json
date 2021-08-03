@@ -1,0 +1,283 @@
+{
+    "id": "instant_choice_doctor_list",
+    "version": 1,
+    "layout": {
+        "nav": {
+            "type": "single_section",
+            "section_details": {
+                "section_id": "navigation"
+            }
+        },
+        "body": {
+            "type": "multi_section",
+            "section_details": [
+                {
+                    "section_id": "filters"
+                },
+                {
+                    "section_id": "info"
+                },
+                {
+                    "section_id": "12345"
+                },
+                {
+                    "section_id": "23456"
+                }
+            ]
+        },
+        "footer": {
+            "type": "single_section",
+            "section_details": {}
+        }
+    },
+    "sections": [
+        {
+            "id": "navigation",
+            "section": {
+                "id": "navigation",
+                "version": 1,
+                "content": {
+                    "title": "Choose Doctor"
+                },
+                "interactions": {
+                    "on_press": {
+                        "actions": [
+                            {
+                                "element": "back_cta",
+                                "type": "native_action",
+                                "data": {}
+                            }
+                        ],
+                        "events": [
+                            {
+                                "element": "back_cta",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "info",
+            "section": {
+                "id": "info",
+                "version": 1,
+                "content": {
+                    "title": "Instant consultation for Knee Pain",
+                    "subtitle": "Treated by a specialist in Orthopedic"
+                }
+            }
+        },
+        {
+            "id": "filters",
+            "section": {
+                "id": "filter_1",
+                "version": 1,
+                "content": {
+                    "first_cta_text": "Availability",
+                    "second_cta_text": "Language"
+                },
+                "interactions": {
+                    "on_press": {
+                        "actions": [
+                            {
+                                "element": "first_cta",
+                                "type": "open_bottom_sheet",
+                                "data": {
+                                    "bottom_sheet_id": "availability"
+                                }
+                            },
+                            {
+                                "element": "second_cta",
+                                "type": "open_bottom_sheet",
+                                "data": {
+                                    "bottom_sheet_id": "language"
+                                }
+                            }
+                        ],
+                        "events": [
+                            {
+                                "element": "first_cta",
+                                "type": "pel",
+                                "data": {}
+                            },
+                            {
+                                "element": "second_cta",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    "on_view": {
+                        "events": [
+                            {
+                                "element": "filter_1",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "12345",
+            "section": {
+                "id": "card_1",
+                "version": "v1",
+                "content": {
+                    "image_url": "person.circle.fill",
+                    "title": "Dr. Saraswati Viswanathan",
+                    "subtitle": "Orthopedist",
+                    "header_line_1": "$BOLD$",
+                    "header_line_2": "$BOLD$ Rated by 1237 patients",
+                    "header_line_2_icon": "star.fill",
+                    "body_line_1": "Speaks: English, Hindi, Marathi, Tamil",
+                    "body_line_1_icon": "message",
+                    "body_line_2": "22876 Consultations",
+                    "body_line_2_icon": "video",
+                    "body_line_3": "₹249 Consultation fee",
+                    "body_line_3_icon": "ticket",
+                    "primary_cta_text": "Consult Now"
+                },
+                "modifiers": {
+                    "bold": [
+                        {
+                            "element": "header_line_1",
+                            "identifier": "$BOLD$",
+                            "display_text": "24 years experience"
+                        },
+                        {
+                            "element": "header_line_2",
+                            "identifier": "$BOLD$",
+                            "display_text": "4.8"
+                        }
+                    ]
+                },
+                "interactions": {
+                    "on_press": {
+                        "actions": [
+                            {
+                                "element": "primary_cta",
+                                "type": "redirect",
+                                "data": {
+                                    "url": "practo.com/consult-payment-summary"
+                                }
+                            },
+                            {
+                                "element": "header",
+                                "type": "redirect",
+                                "data": {
+                                    "url": "practo.com/doctor-profile"
+                                }
+                            }
+                        ],
+                        "events": [
+                            {
+                                "element": "primary_cta",
+                                "type": "pel",
+                                "data": {}
+                            },
+                            {
+                                "element": "header",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    "on_view": {
+                        "events": [
+                            {
+                                "element": "card_1",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "23456",
+            "section": {
+                "id": "card_1",
+                "version": "v1",
+                "content": {
+                    "image_url": "person.circle.fill",
+                    "title": "Dr. Venugopal M.S",
+                    "subtitle": "Orthopedist",
+                    "header_line_1": "$BOLD$",
+                    "header_line_2": "$BOLD$ Rated by 1237 patients",
+                    "header_line_2_icon": "star.fill",
+                    "body_line_1": "Speaks: English, Hindi, Marathi, Tamil",
+                    "body_line_1_icon": "message",
+                    "body_line_2": "22876 Consultations",
+                    "body_line_2_icon": "video",
+                    "body_line_3": "₹249 Consultation fee",
+                    "body_line_3_icon": "ticket",
+                    "primary_cta_text": "Consult Now"
+                },
+                "modifiers": {
+                    "bold": [
+                        {
+                            "element": "header_line_1",
+                            "identifier": "$BOLD$",
+                            "display_text": "14 years experience"
+                        },
+                        {
+                            "element": "header_line_2",
+                            "identifier": "$BOLD$",
+                            "display_text": "4.6"
+                        }
+                    ]
+                },
+                "interactions": {
+                    "on_press": {
+                        "actions": [
+                            {
+                                "element": "primary_cta",
+                                "type": "redirect",
+                                "data": {
+                                    "url": "practo.com/consult-payment-summary"
+                                }
+                            },
+                            {
+                                "element": "header",
+                                "type": "redirect",
+                                "data": {
+                                    "url": "practo.com/doctor-profile"
+                                }
+                            }
+                        ],
+                        "events": [
+                            {
+                                "element": "primary_cta",
+                                "type": "pel",
+                                "data": {}
+                            },
+                            {
+                                "element": "header",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    },
+                    "on_view": {
+                        "events": [
+                            {
+                                "element": "card_1",
+                                "type": "pel",
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "page_meta": {
+        "page_number": 1
+    }
+}
